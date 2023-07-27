@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dashboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dashboard/DashboardWebPart.js",
+          "manifest": "./src/webparts/dashboard/DashboardWebPart.manifest.json"
+        }
+      ]
+    },
+    "apply-leave-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/applyLeave/ApplyLeaveWebPart.js",
+          "manifest": "./src/webparts/applyLeave/ApplyLeaveWebPart.manifest.json"
+        }
+      ]
+    },
+    "employee-leaves-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/employeeLeaves/EmployeeLeavesWebPart.js",
+          "manifest": "./src/webparts/employeeLeaves/EmployeeLeavesWebPart.manifest.json"
+        }
+      ]
+    },
+    "calendar-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/calendar/CalendarWebPart.js",
+          "manifest": "./src/webparts/calendar/CalendarWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DashboardWebPartStrings": "lib/webparts/dashboard/loc/{locale}.js",
+    "ApplyLeaveWebPartStrings": "lib/webparts/applyLeave/loc/{locale}.js",
+    "EmployeeLeavesWebPartStrings": "lib/webparts/employeeLeaves/loc/{locale}.js",
+    "CalendarWebPartStrings": "lib/webparts/calendar/loc/{locale}.js"
+  }
+}
